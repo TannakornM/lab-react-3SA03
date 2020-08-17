@@ -39,10 +39,11 @@ export default function WordCard(props){
             }else{
                 //console.log('reset')
                 alert("try agian !!");
-                setState({...state, guess: '', attempt: state.attempt + 1});
+                state.attempt += 1;
+                setState({...state, guess: '', attempt: state.attempt});
             }
         }
-        
+        temp = state.attempt;
 
     }
 
@@ -50,6 +51,15 @@ export default function WordCard(props){
     return (
         <div>
             
+            <div class="AttemptAndAnswer">
+                
+                Attempt : {temp}
+                <br></br>
+                <br></br>
+                <br></br>
+                
+            </div>
+
 
             { 
                 state.chars.map((c, i) => 

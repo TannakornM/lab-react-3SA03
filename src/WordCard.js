@@ -5,7 +5,7 @@ import CharacterCard from './CharacterCard';
 
 
 var temp = 0;
-
+var yourcharacter = "";
 
 
 const prepareStateFromWord = given_word => {
@@ -23,6 +23,8 @@ const prepareStateFromWord = given_word => {
 export default function WordCard(props){
 
     const [state, setState] = useState(prepareStateFromWord(props.value))
+
+    yourcharacter = state.guess;
 
     const activationHandler = c => { 
         console.log(`${c} has been activated.`) 
@@ -52,7 +54,10 @@ export default function WordCard(props){
         <div>
             
             <div class="AttemptAndAnswer">
-                
+                Your Answer : {yourcharacter}
+                <br></br>
+                <br></br>
+                <br></br>
                 Attempt : {temp}
                 <br></br>
                 <br></br>

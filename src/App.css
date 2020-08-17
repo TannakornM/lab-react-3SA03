@@ -1,4 +1,9 @@
+body {
+  background-image: url("bgr.jpg");
+}
+
 .card {
+  background-image: url("bgr.jpg");
   display: inline-block;
   text-align: center;
   width: 3em;
@@ -12,3 +17,15 @@
   background: pink;
  }
  
+ .cardlayout {
+  font-size: 15px;
+  font-family: "Lucida Console", Courier, monospace;
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+font-family: "Lucida Console", Courier, monospace;
+text-align: center;
+}
+

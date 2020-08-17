@@ -29,12 +29,22 @@ switch (rand) {
 
 function App() {
   return (
-    <div className="App">
-      {
-        <WordCard value={word}/>
-      }
-      
-    </div>
+    <body>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <h1>{text}</h1>
+      <br></br>
+      <br></br>
+        <div class="cardlayout">
+          <WordCard value={word} />
+        </div>
+    </body>
   );
 }
 

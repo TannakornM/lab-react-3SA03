@@ -2,8 +2,31 @@ import React from 'react';
 import './App.css';
 import WordCard from './WordCard';
 
+var text = ""; //question
+var word = ""; //answer
 
-const word = "Hello";
+
+//const word = "Hello";
+
+var rand = Math.floor(Math.random() * 3);
+
+switch (rand) {
+  case 0:
+    text = '"ช้าง" ในภาษาอังกฤษ คือ ?';
+    word = "elephant";
+    break;
+  case 1:
+    text = '"ยีราฟ" ในภาษาอังกฤษ คือ ?';
+    word = "giraffe";
+    break;
+  case 2:
+    text = '"Shark" ในภาษาไทย คือ ?';
+    word = "ฉลาม";
+    break;
+}
+
+
+
 function App() {
   return (
     <div className="App">
